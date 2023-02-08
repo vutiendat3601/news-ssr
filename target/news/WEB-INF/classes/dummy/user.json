@@ -1,0 +1,44 @@
+[
+    {
+        "userId": 1,
+        "firstName": "Admin",
+        "lastName": "Admin",
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "phone": "123456789",
+        "password": "123456",
+        "role": "ROLE_ADMIN",
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM",
+        "verified": true
+    },
+    {
+        "userId": 2,
+        "firstName": "User",
+        "lastName": "User",
+        "username": "user",
+        "email": "user@gmail.com",
+        "phone": "123456789",
+        "password": "123456",
+        "role": "ROLE_USER",
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM",
+        "verified": true
+    },
+    {
+        "userId": 3,
+        "firstName": "Writer",
+        "lastName": "Writer",
+        "username": "writer",
+        "email": "writer@gmail.com",
+        "phone": "123456789",
+        "password": "123456",
+        "role": "ROLE_WRITER",
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM",
+        "verified": true,
+        "writer": {
+            "nickname": "writer"
+        }
+    }
+]

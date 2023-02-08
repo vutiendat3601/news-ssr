@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/resources/common/css/base.css}">
+    <link rel="stylesheet" th:href="@{/resources/web/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/resources/web/css/overview.css}">
+</head>
+
+<body>
+    <nav th:replace="~{web/fragments/navbar :: navbar}"></nav>
+
+    <div class="content">
+        <div class="current-topic">
+            <h1 class="current-topic__heading" th:text="${currentTopic.name}"></h1>
+            <ul class="current-topic__list">
+                <li class="current-topic__list-item" th:each="t : ${currentTopic.childTopics}">
+                    <a th:href="|@{/}${currentTopic.code}/${t.code}|" class="current-topic__list-item-link"
+                        th:text="${t.name}"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="top-article">
+            <img th:src="@{/resources/web/img/img0375.jpg}" width="320px" alt="">
+            <div class="top-article__detail">
+                <a class="top-article__detail-heading"
+                    th:href="|@{/}${currentTopic.code}/${articles[0].topic.code}/${articles[0].code}|"
+                    th:text="${articles[0].title}" 
+                    th:if="${not #arrays.isEmpty(articles)}">
+                </a>
+                <p th:text="${articles[0].shortDescription}" th:if="${not #arrays.isEmpty(articles)}"></p>
+            </div>
+        </div>
+        <ul class="article-list">
+            <li class="article-item" th:each="article : ${articles}">
+                <a class="article-item__heading"
+                    th:href="|@{/}${currentTopic.code}/${article.topic.code}/${article.code}|"
+                    th:text="${article.title}"></a>
+                <p th:text="${article.shortDescription}"></p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

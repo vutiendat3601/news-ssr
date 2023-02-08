@@ -1,0 +1,92 @@
+[
+    {
+        "regionId": 1,
+        "name": "TP Hồ Chí Minh",
+        "code": "ho-chi-minh",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 2,
+        "name": "Hà Nội",
+        "code": "ha-noi",
+        "description": "Thủ đô",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 3,
+        "name": "Đà Nẵng",
+        "code": "da-nang",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 4,
+        "name": "Huế",
+        "code": "hue",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 5,
+        "name": "Cần Thơ",
+        "code": "can-tho",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 6,
+        "name": "Kiên Giang",
+        "code": "kien-giang",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 7,
+        "name": "Ninh Bình",
+        "code": "ninh-binh",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 8,
+        "name": "Nam Định",
+        "code": "nam-dinh",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 9,
+        "name": "Hà Nam",
+        "code": "ha-nam",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "regionId": 10,
+        "name": "Quảng Ninh",
+        "code": "quang-ninh",
+        "description": "",
+        "parentRegion": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    }
+]

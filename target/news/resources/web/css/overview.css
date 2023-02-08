@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.current-topic {
+    border-bottom: 1px #e5e5e5 solid;
+    display: flex;
+    align-items: baseline;
+}
+
+.current-topic__heading {
+    font-size: 32px;
+    margin: 16px 8px 16px 0;
+}
+
+.current-topic__list {
+    display: flex;
+    list-style: none;
+}
+
+.current-topic__list-item {
+    padding: 8px;
+}
+
+.current-topic__list-item-link {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.current-topic__list-item:hover a {
+    color: #b52759;
+}
+
+.top-article {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px #e5e5e5 solid;
+    width: max-content;
+}
+
+.top-article__detail {
+    background-color: #f7f7f7;
+    padding: 16px;
+    width: 240px;
+}
+
+.top-article__detail-heading {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+.article-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 760px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.article-item {
+    padding: 0 8px;
+    width: 232px;
+}
+
+.article-item__heading {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+.top-story__detail-heading:hover,
+.story-item__heading:hover {
+    color: #b52759;
+}

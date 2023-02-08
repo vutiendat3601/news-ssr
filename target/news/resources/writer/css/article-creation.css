@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    margin-left: 16px;
+}
+
+.form-article {
+    margin: 0 auto;
+}

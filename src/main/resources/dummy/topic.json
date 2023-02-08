@@ -1,0 +1,525 @@
+[
+    {
+        "topicId": 1,
+        "code": "thoi-su",
+        "description": "/thoi-su | Thời sự",
+        "name": "Thời sự",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 2,
+        "code": "goc-nhin",
+        "description": "/goc-nhin | Góc nhìn",
+        "name": "Góc nhìn",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 3,
+        "code": "the-gioi",
+        "description": "/the-gioi | Thế giới",
+        "name": "Thế giới",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 4,
+        "code": "video",
+        "description": "/video | Video",
+        "name": "Video",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 5,
+        "code": "podcasts",
+        "description": "/podcasts | Podcasts",
+        "name": "Podcasts",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 6,
+        "code": "kinh-doanh",
+        "description": "/kinh-doanh | Kinh doanh",
+        "name": "Kinh doanh",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 7,
+        "code": "khoa-hoc",
+        "description": "/khoa-hoc | Khoa học",
+        "name": "Khoa học",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 8,
+        "code": "giai-tri",
+        "description": "/giai-tri | Giải trí",
+        "name": "Giải trí",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 9,
+        "code": "the-thao",
+        "description": "/the-thao | Thể thao",
+        "name": "Thể thao",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 10,
+        "code": "phap-luat",
+        "description": "/phap-luat | Pháp luật",
+        "name": "Pháp luật",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 11,
+        "code": "giao-duc",
+        "description": "/giao-duc | Giáo dục",
+        "name": "Giáo dục",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 12,
+        "code": "suc-khoe",
+        "description": "/suc-khoe | Sức khỏe",
+        "name": "Sức khỏe",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 13,
+        "code": "doi-song",
+        "description": "/doi-song | Đời sống",
+        "name": "Đời sống",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 14,
+        "code": "du-lich",
+        "description": "/du-lich | Du lịch",
+        "name": "Du lịch",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 15,
+        "code": "so-hoa",
+        "description": "/so-hoa | Số hóa",
+        "name": "Số hóa",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 16,
+        "code": "xe",
+        "description": "/xe | Xe",
+        "name": "Xe",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 17,
+        "code": "y-kien",
+        "description": "/y-kien | Ý kiến",
+        "name": "Ý kiến",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 18,
+        "code": "tam-su",
+        "description": "/tam-su | Tâm sự",
+        "name": "Tâm sự",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 19,
+        "code": "hai",
+        "description": "/hai | Hài",
+        "name": "Hài",
+        "parentTopic": null,
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 20,
+        "code": "chinh-tri",
+        "description": "/thoi-su/chinh-tri | Chính trị",
+        "name": "Chính trị",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 21,
+        "code": "dan-sinh",
+        "description": "/thoi-su/dan-sinh | Dân sinh",
+        "name": "Dân sinh",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 22,
+        "code": "lao-dong-viec-lam",
+        "description": "/thoi-su/lao-dong-viec-lam | Lao động - Việc làm",
+        "name": "Lao động - Việc làm",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 23,
+        "code": "giao-thong",
+        "description": "/thoi-su/giao-thong | Giao thông",
+        "name": "Giao thông",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 24,
+        "code": "quy-hy-vong",
+        "description": "/thoi-su/quy-hy-vong | Quỹ Hy vọng",
+        "name": "Quỹ Hy vọng",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 25,
+        "code": "tet-quy-mao-2023",
+        "description": "/thoi-su/tet-quy-mao-2023 | Tết Quý Mão",
+        "name": "Tết Quý Mão",
+        "parentTopic": {
+            "topicId": 1
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 26,
+        "code": "chinh-tri-chinh-sach",
+        "description": "/goc-nhin/chinh-tri-chinh-sach | Chính trị & chính sách",
+        "name": "Chính trị & chính sách",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 27,
+        "code": "y-te-suc-khoe",
+        "description": "/goc-nhin/y-te-suc-khoe | Y tế & sức khỏe",
+        "name": "Y tế & sức khỏe",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 28,
+        "code": "kinh-doanh-quan-tri",
+        "description": "/goc-nhin/kinh-doanh-quan-tri | Kinh doanh & quản trị",
+        "name": "Kinh doanh & quản trị",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 29,
+        "code": "giao-duc-tri-thuc",
+        "description": "/goc-nhin/giao-duc-tri-thuc | Giáo dục & tri thức",
+        "name": "Giáo dục & tri thức",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 30,
+        "code": "moi-truong",
+        "description": "/goc-nhin/moi-truong | Môi trường",
+        "name": "Môi trường",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 31,
+        "code": "van-hoa-loi-song",
+        "description": "/goc-nhin/van-hoa-loi-song | Văn hóa & lối sống",
+        "name": "Văn hóa & lối sống",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 32,
+        "code": "covid-19",
+        "description": "/goc-nhin/covid-19 | Covid-19",
+        "name": "Covid-19",
+        "parentTopic": {
+            "topicId": 2
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 33,
+        "code": "tu-lieu",
+        "description": "/the-gioi/tu-lieu | Tư liệu",
+        "name": "Tư liệu",
+        "parentTopic": {
+            "topicId": 3
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 34,
+        "code": "phan-tich",
+        "description": "/the-gioi/phan-tich | Phân tích",
+        "name": "Phân tích",
+        "parentTopic": {
+            "topicId": 3
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 35,
+        "code": "nguoi-viet-5-chau",
+        "description": "/the-gioi/nguoi-viet-5-chau | Người Việt 5 châu",
+        "name": "Người Việt 5 châu",
+        "parentTopic": {
+            "topicId": 3
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 36,
+        "code": "cuoc-song-do-day",
+        "description": "/the-gioi/cuoc-song-do-day | Cuộc sống đó đây",
+        "name": "Cuộc sống đó đây",
+        "parentTopic": {
+            "topicId": 3
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 37,
+        "code": "quan-su",
+        "description": "/the-gioi/quan-su | Quân sự",
+        "name": "Quân sự",
+        "parentTopic": {
+            "topicId": 3
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 38,
+        "code": "thoi-su",
+        "description": "/video/thoi-su | Thời sự",
+        "name": "Thời sự",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 39,
+        "code": "nhip-song",
+        "description": "/video/nhip-song | Nhịp sống",
+        "name": "Nhịp sống",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 40,
+        "code": "food",
+        "description": "/video/food | Food",
+        "name": "Food",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 41,
+        "code": "toi-ke",
+        "description": "/video/toi-ke | Tôi kể",
+        "name": "Tôi kể",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 42,
+        "code": "chuyen-nui-rung",
+        "description": "/video/chuyen-nui-rung | Chuyện núi rừng",
+        "name": "Chuyện núi rừng",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 43,
+        "code": "phap-luat",
+        "description": "/video/phap-luat | Pháp luật",
+        "name": "Pháp luật",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 44,
+        "code": "giai-tri",
+        "description": "/video/giai-tri | Giải trí",
+        "name": "Giải trí",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 45,
+        "code": "the-thao",
+        "description": "/video/the-thao | Thể thao",
+        "name": "Thể thao",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 46,
+        "code": "so-hoa",
+        "description": "/video/so-hoa | Số hoá",
+        "name": "Số hoá",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 47,
+        "code": "xe",
+        "description": "/video/xe | Xe",
+        "name": "Xe",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 48,
+        "code": "suc-khoe",
+        "description": "/video/suc-khoe | Sức khoẻ",
+        "name": "Sức khoẻ",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 49,
+        "code": "du-lich",
+        "description": "/video/du-lich | Du lịch",
+        "name": "Du lịch",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 50,
+        "code": "the-gioi",
+        "description": "/video/the-gioi | Thế giới",
+        "name": "Thế giới",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    },
+    {
+        "topicId": 51,
+        "code": "khoa-hoc",
+        "description": "/video/khoa-hoc | Khoa học",
+        "name": "Khoa học",
+        "parentTopic": {
+            "topicId": 4
+        },
+        "createdBy": "SYSTEM",
+        "modifiedBy": "SYSTEM"
+    }
+]

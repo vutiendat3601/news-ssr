@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách bài viết</title>
+    <!-- <link rel="stylesheet" href="../../../resources/common/css/base.css"> -->
+    <!-- <link rel="stylesheet" href="../../../resources/writer/css/article-list.css"> -->
+    <link rel="stylesheet" th:href="@{/resources/common/css/base.css}">
+    <link rel="stylesheet" th:href="@{/resources/writer/css/article-list.css}">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="sidebar" th:replace="~{writer/fragments/sidebar :: sidebar}"></nav>
+        <div class="content">
+            <h3 class="heading">Danh sách bài viết</h3>
+            <table class="article-list">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tiêu đề</th>
+                        <th>Mô tả ngắn</th>
+                        <th>Thumbnail</th>
+                        <th>Chủ đề cha</th>
+                        <th>Chủ đề</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="a : ${articles}">
+                        <td th:text="${a.articleId}">1</td>
+                        <td th:text="${a.title}">Messi: 'Vô địch World Cup ở gần cuối sự nghiệp là đẹp nhất'</td>
+                        <td th:text="${a.shortDescription}">Lionel Messi lần đầu thuật lại hành trình đăng quang và ăn mừng chức vô địch World Cup 2022,
+                            trong buổi phỏng vấn với Infobae ngày 30/1.</td>
+                        <td>
+                            <a th:href="|@{/}${a.thumbnail}|"
+                                th:text="|@{/}${a.thumbnail}|"
+                            >
+                                http://127.0.0.1:5500/src/main/webapp/WEB-INF/views/writer/article-list.html
+                            </a>
+                        </td>
+                        <td th:text="${a.topic.parentTopic.name}">The thao</td>
+                        <td th:text="${a.topic.name}">Bong da</td>
+                        <td>
+                            <a class="btn" th:href="|@{/writer/article-deletion}/${a.code}|">Chỉnh sửa</a>
+                            <a class="btn" th:href="|@{/writer/article-deletion}/${a.code}|">Xoá</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

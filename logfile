@@ -1,0 +1,11 @@
+2023-01-30 08:43:23.783 +07 [15144] LOG:  starting PostgreSQL 15.1, compiled by Visual C++ build 1914, 64-bit
+2023-01-30 08:43:23.789 +07 [15144] LOG:  listening on IPv6 address "::1", port 5432
+2023-01-30 08:43:23.789 +07 [15144] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-01-30 08:43:23.852 +07 [12948] LOG:  database system was interrupted; last known up at 2023-01-29 15:19:11 +07
+2023-01-30 08:43:24.564 +07 [12948] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-01-30 08:43:24.569 +07 [12948] LOG:  redo starts at 0/4E6AE78
+2023-01-30 08:43:24.569 +07 [12948] LOG:  invalid record length at 0/4E6AEB0: wanted 24, got 0
+2023-01-30 08:43:24.569 +07 [12948] LOG:  redo done at 0/4E6AE78 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-01-30 08:43:24.575 +07 [10296] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-01-30 08:43:24.587 +07 [10296] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.014 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-01-30 08:43:24.604 +07 [15144] LOG:  database system is ready to accept connections

@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #b52759;
+}
+
+/* Begin: Common */
+.btn {
+    margin: 4px;
+    min-width: 48px;
+    height: 32px;
+}
+
+.form {
+    min-height: 100px;
+    padding: 8px 16px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+
+.form .heading {
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 4px;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.form-control {
+    height: 20px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.select-control:hover,
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+}
+
+.select-control {
+    height: 36px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+
+.spacer {
+    margin-top: 36px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 4px 4px;
+}
+
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.menu-item:hover {
+    background-color: #1dbfaf;
+}
+
+.menu a {
+    padding: 4px 8px 4px 4px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    text-align: left;
+    text-decoration: none;
+    color: unset;
+    font-size: 14px;
+    line-height: 14px;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 2px;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    font-size: 18px;
+}
+
+/* End: Common */

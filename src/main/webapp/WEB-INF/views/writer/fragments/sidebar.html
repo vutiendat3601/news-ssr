@@ -1,0 +1,14 @@
+<nav class="sidebar" th:fragment="sidebar">
+    <header class="header"></header>
+    <div class="menu-bar">
+        <ul class="menu">
+            <li class="menu-item" th:styleappend="${currentMenu == 'article-list' ? 'background-color: #1dbfaf;' : ''}"><a
+                    th:href="|@{/}writer/all-articles|">Danh sách bài viết</a></li>
+            <li class="menu-item" th:styleappend="${currentMenu == 'article-creation' ? 'background-color: #1dbfaf;' : ''}">
+                <a th:href="|@{/}writer/article-creation|">Tạo bài viết</a></li>
+            <li class="menu-item" th:styleappend="${currentMenu == 'writer-profile' ? 'background-color: #1dbfaf;' : ''}"><a
+                    th:href="|@{/}writer/|">Trang cá nhân</a></li>
+            <li class="menu-item"><a th:href="|@{/}|">Thoát</a></li>
+        </ul>
+    </div>
+</nav>

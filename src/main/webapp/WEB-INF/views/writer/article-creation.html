@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../../../resources/common/css/base.css"> -->
+    <!-- <link rel="stylesheet" href="../../../resources/writer/css/article-creation.css"> -->
+    <link rel="stylesheet" th:href="@{/resources/common/css/base.css}">
+    <link rel="stylesheet" th:href="@{/resources/writer/css/article-creation.css}">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="sidebar" th:replace="~{writer/fragments/sidebar :: sidebar}"></nav>
+        <div class="content">
+            <form class="form form-article" th:action="@{/writer/article-creation}" method="post" th:object="${articleReq}">
+                <h3 class="heading">Tạo bài viết</h3>
+                <div class="form-group">
+                    <label for="title" class="form-label">Tiêu đề</label>
+                    <input class="form-control" type="text" id="title" th:field="*{title}">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="short_description" class="form-label">Mô tả ngắn</label>
+                    <input class="form-control" type="text" id="short_description" th:field="*{shortDescription}">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="editor" class="form-label">Nội dung</label>
+                    <textarea name="" id="editor" th:field="*{content}"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail" class="form-label">Thumbnail</label>
+                    <input class="form-control" type="url" id="thumbnail" th:field="*{thumbnail}">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="parent_topics" class="form-label">Chủ đề cha</label>
+                    <select class="select-control" id="parent_topics" onchange="loadChildTopics()"
+                        th:field="*{parentTopicCode}">
+                        <option value="${pTopic.code}" th:each="pTopic : ${parentTopic}" th:text="${pTopic.name}">
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="child_topics" class="form-label">Chủ đề</label>
+                    <select class="select-control" id="child_topics" th:field="*{topic.code}">
+                        <option value="${pTopic.code}" th:each="pTopic : ${parentTopic}" th:text="${pTopic.name}">
+                        </option>
+                    </select>
+                </div>
+                <button class="btn">Back</button>
+                <input class="btn" type="submit" value="Create"></input>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="../../../resources/writer/ckeditor/ckeditor.js"></script> -->
+    <script th:src="@{/resources/writer/ckeditor/ckeditor.js}"></script>
+    <script th:inline="javascript">
+        var editor = "";
+        editor = CKEDITOR.replace("editor");
+    </script>
+    <script th:inline="javascript">
+        var parentTopicElement = document.querySelector("#parent_topics");
+        var childTopicElement = document.querySelector("#child_topics");
+        var contextURL = `http://${window.location.host}` + /*[[@{/}]]*/"";
+        var topicApi = `${contextURL}api/topics`;
+        loadParentTopic();
+        function loadParentTopic() {
+            fetch(`${topicApi}/all-parent`)
+                .then(data => data.json())
+                .then(topics => {
+                    var parentTopicOptions = "";
+                    topics.forEach(topic => {
+                        parentTopicOptions +=
+                            `<option value="${topic.code}">
+                        ${topic.name}
+                    </option>`;
+                    });
+                    // console.log(parentTopicOptions);
+                    parentTopicElement.innerHTML = parentTopicOptions;
+                    loadChildTopics();
+                });
+        }
+        function loadChildTopics() {
+            var selectedParentTopic = parentTopicElement.options[parentTopicElement.selectedIndex].value;
+            fetch(`${topicApi}/${selectedParentTopic}/all-children`)
+                .then(data => data.json())
+                .then(topics => {
+                    console.log(topics);
+                    var childTopicOptions = "";
+                    topics.forEach(topic => {
+                        childTopicOptions +=
+                            `<option value="${topic.code}">
+                        ${topic.name}
+                        </option>`;
+                    });
+                    childTopicElement.innerHTML = childTopicOptions;
+                });
+        }
+    </script>
+</body>
+
+</html>

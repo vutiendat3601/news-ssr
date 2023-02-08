@@ -1,0 +1,19 @@
+<nav class="main-nav" th:fragment="navbar">
+    <ul class="topics">
+        <li class="topics__item topics__home">
+            <a th:href="@{/}">
+                <img th:src=" @{/resources/web/img/home.png}" style="width: 100%; height: 100%;">
+            </a>
+        </li>
+        <li class="topics__item" th:each="pTopic : ${parentTopics}">
+            <a th:href="|@{/}${pTopic.code}|" th:text="${pTopic.name}"
+                th:classappend="${currentTopic.code == pTopic.code ? 'active' : ''}">
+            </a>
+            <ul class="topics__child">
+                <li class="topics__child-item" th:each="cTopic : ${pTopic.childTopics}">
+                    <a th:href="|@{/}${pTopic.code}/${cTopic.code}|" th:text="${cTopic.name}"></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
